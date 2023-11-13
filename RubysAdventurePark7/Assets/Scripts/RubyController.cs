@@ -9,6 +9,9 @@ public class RubyController : MonoBehaviour
     int currenthp;
     public float speed = 3.0f;
 
+    bool isInvincible;
+    float invincibleTime;
+
     Rigidbody2D rigidbody2d;
     float horizontal;
     float vertical;
@@ -27,6 +30,11 @@ public class RubyController : MonoBehaviour
     {
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
+
+        if(isInvincible)
+        {
+            invincibleTime
+        }
     }
 
     void FixedUpdate()
