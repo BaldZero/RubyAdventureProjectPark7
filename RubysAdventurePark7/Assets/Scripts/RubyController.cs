@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class RubyController : MonoBehaviour
 {
     public int maxhp = 5;
+    public float timeInvincible = 2.0f;
     public int health { get {  return currenthp; } }
     int currenthp;
     public float speed = 3.0f;
@@ -33,7 +35,9 @@ public class RubyController : MonoBehaviour
 
         if(isInvincible)
         {
-            invincibleTime
+            invincibleTime -= Time.deltaTime;
+            if (invincibleTime < 0)
+                isInvincible = false;
         }
     }
 
@@ -48,6 +52,15 @@ public class RubyController : MonoBehaviour
 
     public void Changehp(int amount)
     {
+        if(amount < 0)
+        {
+            if (isInvincible)
+                return;
+
+            isInvincible = true;
+            invincibleTime = timeInvincible;
+
+        }
         currenthp = Mathf.Clamp(currenthp = amount, 0, maxhp);
         Debug.Log(currenthp + "/" + maxhp);
     }
