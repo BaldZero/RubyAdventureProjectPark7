@@ -7,6 +7,7 @@ public class EnemyController : MonoBehaviour
     public float speed;
     public bool vertical;
     public float changetime = 3.0f;
+    bool broken = true;
 
     Rigidbody2D rigidbody2D;
     float timer;

@@ -14,7 +14,7 @@ public class CollectHP : MonoBehaviour
             if (controller.health < controller.maxhp)
             {
                 controller.Changehp(1);
-                Destroy(controller);
+                Destroy(gameObject);
             }
         }
     }
