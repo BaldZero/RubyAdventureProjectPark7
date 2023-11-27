@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class CollectHP : MonoBehaviour
 {
+    public AudioClip collectedClip;
+
+    
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -15,6 +18,8 @@ public class CollectHP : MonoBehaviour
             {
                 controller.Changehp(1);
                 Destroy(gameObject);
+
+                controller.PlaySound(collectedClip);
             }
         }
     }

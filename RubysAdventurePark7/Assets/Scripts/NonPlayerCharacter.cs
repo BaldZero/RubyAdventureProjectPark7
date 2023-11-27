@@ -26,4 +26,10 @@ public class NonPlayerCharacter : MonoBehaviour
             }
         }
     }
+
+    public void DisplayDialogue()
+    {
+        timerDisplay = displayTime;
+        dialogBox.SetActive(true);
+    }
 }
