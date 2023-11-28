@@ -30553,6 +30553,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: House
       objectReference: {fileID: 0}
+    - target: {fileID: 7113929159888541962, guid: 8ae5d621f26b4c140b6625a7049078e8, type: 3}
+      propertyPath: m_Size.x
+      value: 3.2945232
+      objectReference: {fileID: 0}
+    - target: {fileID: 7113929159888541962, guid: 8ae5d621f26b4c140b6625a7049078e8, type: 3}
+      propertyPath: m_Size.y
+      value: 2.724493
+      objectReference: {fileID: 0}
+    - target: {fileID: 7113929159888541962, guid: 8ae5d621f26b4c140b6625a7049078e8, type: 3}
+      propertyPath: m_Offset.x
+      value: -1.7351894
+      objectReference: {fileID: 0}
+    - target: {fileID: 7113929159888541962, guid: 8ae5d621f26b4c140b6625a7049078e8, type: 3}
+      propertyPath: m_Offset.y
+      value: 2.1996682
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
